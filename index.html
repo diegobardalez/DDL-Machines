@@ -37,7 +37,22 @@
       --bs-table-hover-color: #fff;
       color: #27ff02;
       border-color: var(--bs-table-border-color);
-  }
+    }
+    .dataTables_wrapper .dataTables_paginate .paginate_button.current {
+      background-color: #212529 !important;
+      border-color: #373b3e !important;
+    }
+    .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+      background-color: #323539 !important;
+      border-color: #373b3e !important;
+    }
+    .dataTables_wrapper .dataTables_paginate .paginate_button.disabled {
+      color: #6c757d !important;
+    }
+    .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover {
+      background-color: #212529 !important;
+      border-color: #373b3e !important;
+    }
   </style>
 </head>
 <body>
@@ -87,7 +102,9 @@
 <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
 <script>
   $(document).ready(function() {
-    $('#dataTable').DataTable();
+    $('#dataTable').DataTable({
+      "pagingType": "full_numbers" // Para habilitar la paginación completa con números
+    });
 
     // Configurar el buscador para afectar al DataTable
     $('#buscador').on('keyup', function () {
