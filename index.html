@@ -101,6 +101,7 @@
             <th>Dificultad</th>
             <th>Creador</th>
             <th>Descarga</th>
+            <th>¿Cómo se usa?</th>
           </tr>
         </thead>
         <tbody>
@@ -110,6 +111,7 @@
             <td><span class="badge rounded-pill text-bg-info">Super Facil</span></td>
             <td>D13G0</td>
             <td><a href="https://www.mediafire.com/file/huv7h3siymzfzge/maquina_test.zip/file" target="_blank">Descargar</a></td>
+            <td><span class="badge rounded-pill text-bg-info" data-bs-toggle="modal" data-bs-target="#deployModal">>Deploy</span></td>
           </tr>
           <!-- Puedes añadir más filas según necesites -->
         </tbody>
@@ -249,5 +251,31 @@
     });
   });
 </script>
+
+<!-- Modal -->
+<div class="modal fade" id="deployModal" tabindex="-1" aria-labelledby="deployModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">¿Cómo desplegar la maquina?</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Requisitos</p>
+        <p>Docker debe estar instalado</p>
+        <code>sudo apt install docker.io</code>
+        <hr>
+        <ol class="list-group list-group-numbered">
+          <li class="list-group-item">Descomprimir el .zip</li>
+          <li class="list-group-item">ejecutar sudo bash auto_deploy.sh laboratorio.tar</li>
+          <li class="list-group-item">Happy Hacking</li>
+        </ol>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 </html>
