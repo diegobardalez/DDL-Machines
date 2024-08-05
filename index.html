@@ -140,7 +140,7 @@
             <td>El último recurso es la violencia 😛</td>
             <td>DDLR</td>
             <td><a href="https://drive.google.com/file/d/1lPV62YEj5nOTqg-PNUYqLVcZUErRG9_i" target="_blank"><span class="badge text-bg-light"><i class="fa-solid fa-file-arrow-down"></i> Descargar</span></a></td>
-            <td><span class="badge rounded-pill text-bg-info" data-bs-toggle="modal" data-bs-target="" style="cursor: pointer;"><i class="fa-solid fa-server"></i> Deploy (VirtualBox / Añadir)</span></td>
+            <td><span class="badge rounded-pill text-bg-info" data-bs-toggle="modal" data-bs-target="#deployModal2" style="cursor: pointer;"><i class="fa-solid fa-server"></i> Deploy (VirtualBox / Añadir)</span></td>
           </tr>
            <tr>
             <td>DDLR Pwneable #3</td>
@@ -148,7 +148,7 @@
             <td>Un buen reconocimiento siempre ayuda</td>
             <td>DDLR</td>
             <td><a href="https://drive.google.com/file/d/10lF2OAHFxAsRbwk_BOVa6CWmowqkBffp/view?usp=drive_link" target="_blank"><span class="badge text-bg-light"><i class="fa-solid fa-file-arrow-down"></i> Descargar</span></a></td>
-            <td><span class="badge rounded-pill text-bg-info" data-bs-toggle="modal" data-bs-target="" style="cursor: pointer;"><i class="fa-solid fa-server"></i> Deploy (VirtualBox / Añadir)</span></td>
+            <td><span class="badge rounded-pill text-bg-info" data-bs-toggle="modal" data-bs-target="#deployModal2" style="cursor: pointer;"><i class="fa-solid fa-server"></i> Deploy (VirtualBox / Añadir)</span></td>
           </tr>
           <!-- Puedes añadir más filas según necesites -->
         </tbody>
@@ -305,6 +305,32 @@
         <ol class="list-group list-group-numbered">
           <li class="list-group-item">Descomprimir el .zip</li>
           <li class="list-group-item">ejecutar sudo bash auto_deploy.sh laboratorio.tar</li>
+          <li class="list-group-item">Happy Hacking</li>
+        </ol>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="deployModal2" tabindex="-1" aria-labelledby="deployModalLabel2" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">¿Cómo desplegar la maquina?</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Requisitos</p>
+        <p>VirtualBox debe estar instalado</p>
+        
+        <hr>
+        <ol class="list-group list-group-numbered">
+          <li class="list-group-item">Descomprimir el .zip</li>
+          <li class="list-group-item">Agregar maquina al virtualbox</li>
           <li class="list-group-item">Happy Hacking</li>
         </ol>
       </div>
